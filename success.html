@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <title></title>
+    <script>
+        $(function(){
+            $(".container").height($(window).height());
+            $(".share-tip").height($(window).height());
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+
+<div class="container result-container">
+    <div class="success-content">
+        <p class="congratulation">已经集齐全部蛋蛋，获得浙江联通送出的格瓦拉2D<span>电影票1张～</span></p>
+        <img src="img/ticket.png">
+        <a href="#">点击查看兑换流程>></a>
+    </div>
+    <div class="success-btn">
+        <div class="share">
+            <img src="img/share.png">
+        </div>
+        <div class="join">
+            <a href="#">
+            <img src="img/join.png">
+            </a>
+        </div>
+    </div>
+    <p class="remain success-remain">当前还剩<span>199</span>张电影票可领</p>
+    <p class="tip3">*电影票兑换码会以短信方式发送至您的手机</p>
+</div>
+<div class="share-tip">
+    <img src="img/share-tip.png">
+</div>
+<script>
+    $(function(){
+    $(".share").click(function(){
+        $(".share-tip").css('display','block');
+    });
+    $(".share-tip").click(function(){
+        $(this).css('display','none');
+    });
+    });
+</script>
+</body>
+</html>
